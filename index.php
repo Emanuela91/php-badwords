@@ -10,16 +10,18 @@
     <style>
 
     </style>
+    <?php
+    // Paragrafo "lorem"
+    $phar = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae in quo dolore? Adipisci a amet doloremque beatae. Repellendus a accusantium quibusdam hic eaque corrupti aut. Exercitationem non perferendis et consequuntur.";
+    // trovo la lunghezza del paragrafo
+    $lng = strlen($phar);
+    ?>
 </head>
 
 <body>
     <p>
         <?php
-        // Paragrafo "lorem"
-        $phar = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae in quo dolore? Adipisci a amet doloremque beatae. Repellendus a accusantium quibusdam hic eaque corrupti aut. Exercitationem non perferendis et consequuntur.";
-        // trovo la lunghezza del paragrafo
-        $lng = strlen($phar);
-        // lo stampo
+        // stampo la lunghezza del paragrafo
         echo $phar . " : " . $lng;
         ?>
     </p>

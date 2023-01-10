@@ -28,15 +28,22 @@
         $cens = $_GET['cs'];
         echo "<br>";
         // stampo la parola censurata
-        echo "Parola Censurata: " . $cens;
-        echo "<br>";
-
+        // echo "Parola Censurata: " . $cens;
+        // echo "<br>";
+        
         // asterischi sulla badword
         $newPhar = str_replace($cens, "***", $phar);
         // nuova lunghezza del paragrafo
         $newLng = strlen($newPhar);
         // stampo il nuovo paragrafo
-        echo $newPhar . " : " . $newLng;
+        // echo $newPhar . " : " . $newLng;
+        
+        // paragrafo che compare quando c'è la parola censurata
+        if (isset($cens)) {
+            echo "Parola Censurata: " . $cens;
+            echo "<br>";
+            echo $newPhar . " : " . $newLng;
+        }
 
         ?>
     </p>

@@ -18,6 +18,7 @@
         <?php
         // Paragrafo "lorem"
         $phar = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae in quo dolore? Adipisci a amet doloremque beatae. Repellendus a accusantium quibusdam hic eaque corrupti aut. Exercitationem non perferendis et consequuntur.";
+
         // trovo la lunghezza del paragrafo
         $lng = strlen($phar);
         // stampo la lunghezza del paragrafo
@@ -28,6 +29,15 @@
         echo "<br>";
         // stampo la parola censurata
         echo "Parola Censurata: " . $cens;
+        echo "<br>";
+
+        // asterischi sulla badword
+        $newPhar = str_replace($cens, "***", $phar);
+        // nuova lunghezza del paragrafo
+        $newLng = strlen($newPhar);
+        // stampo il nuovo paragrafo
+        echo $newPhar . " : " . $newLng;
+
         ?>
     </p>
 

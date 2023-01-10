@@ -10,19 +10,24 @@
     <style>
 
     </style>
-    <?php
-    // Paragrafo "lorem"
-    $phar = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae in quo dolore? Adipisci a amet doloremque beatae. Repellendus a accusantium quibusdam hic eaque corrupti aut. Exercitationem non perferendis et consequuntur.";
-    // trovo la lunghezza del paragrafo
-    $lng = strlen($phar);
-    ?>
+
 </head>
 
 <body>
     <p>
         <?php
+        // Paragrafo "lorem"
+        $phar = "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repudiandae in quo dolore? Adipisci a amet doloremque beatae. Repellendus a accusantium quibusdam hic eaque corrupti aut. Exercitationem non perferendis et consequuntur.";
+        // trovo la lunghezza del paragrafo
+        $lng = strlen($phar);
         // stampo la lunghezza del paragrafo
         echo $phar . " : " . $lng;
+
+        // parola censurata
+        $cens = $_GET['cs'];
+        echo "<br>";
+        // stampo la parola censurata
+        echo "Parola Censurata: " . $cens;
         ?>
     </p>
 
